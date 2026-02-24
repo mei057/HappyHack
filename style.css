@@ -52,6 +52,7 @@ nav{
 display: none;
 }}
 
+
 .first-view{
     width: 100vw;
     height: 100vh;
@@ -85,7 +86,23 @@ display: none;
     font-family: 'Futura-BooObl',sans-serif;
 }
 
+@media (max-width: 768px){
+.logo img{
+    width: 450px;
+}
+.logo p{
+    font-size: 20px;
+}
+}
 
+@media (max-width: 498px){
+.logo img{
+    width: 200px;
+}
+.logo p{
+    font-size: 15px;
+}
+}
 
 .fadein{
     opacity: 0;
@@ -112,13 +129,13 @@ h2{
 }
 
 .contents img{
-    width: 500px;
+    width: 450px;
     height: auto;
     object-fit: cover;
 }
 
 .text{
-    max-width: 400px;
+    max-width: 450px;
 }
 
 .text p{
@@ -156,6 +173,25 @@ h2{
 
 .content-reverse a{
     background-color: #f7c14d;
+}
+
+@media (max-width: 768px){
+.text {
+    margin-top: -40px;
+}
+}
+
+@media (max-width: 498px){
+h2{
+    font-size: 30px;
+}
+.contents img{
+    width: 80%;
+}
+.contents p{
+    margin: 5px 10px;
+    font-size: 13px;
+}
 }
 
 #courses{
@@ -253,6 +289,17 @@ h2{
     background-color: #00add8;
 }
 
+@media (max-width: 498px){
+.course-contents{
+    margin: 20px 20px;
+}
+
+.course-content{
+    width: 150px;
+}
+
+}
+
 #images{
     padding: 100px 0;
     max-width: 1000px;
@@ -284,16 +331,29 @@ h2{
     color:#333333;
 }
 
+@media (max-width: 498px){
+.slider{
+    max-width: 70%; 
+}
+}
+
 #access{
     padding: 50px;
     margin-top: -100px;
 }
+
 
 iframe{
     display: block;
     margin: 0 auto;
     width: 600px;
     height: 400px;
+}
+
+@media (max-width: 498px){
+iframe{
+    width: 240px;
+}
 }
 
 footer{

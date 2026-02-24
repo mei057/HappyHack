@@ -23,6 +23,26 @@ $(function($){
         dots: true,
         slidesToShow: 4,   // 一度に表示する枚数
         slidesToScroll: 1,
+        responsive: [
+        {
+            breakpoint: 1024, 
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 768,  
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 498,  
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+    ]
     });
 
     $('nav a[href^="#"]').click(function(){
