@@ -41,6 +41,7 @@ nav a{
     font-size: 20px;
     text-decoration: none;
     /*font-family: 'Futura-BooObl',sans-serif;*/
+    transition: color 0.3s ease;
 }
 
 nav a:hover{
@@ -54,7 +55,7 @@ display: none;
 
 
 .first-view{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-image: url(images/background1.jpg);
     background-size: cover;
@@ -73,7 +74,7 @@ display: none;
 }
 
 .logo img{
-    width: 900px;
+    width: 100%;
     height: auto;
 }
 
@@ -175,11 +176,11 @@ h2{
     background-color: #f7c14d;
 }
 
-@media (max-width: 768px){
+/*@media (max-width: 768px){
 .text {
     margin-top: -40px;
 }
-}
+}*/
 
 @media (max-width: 498px){
 h2{
@@ -189,24 +190,36 @@ h2{
     width: 80%;
 }
 .contents p{
-    margin: 5px 10px;
+    margin: 5px 15px;
     font-size: 13px;
 }
 }
 
 #courses{
     position: relative;
-    overflow: hidden;
-    background-color: transparent;
     margin: 100px 0;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
 }
 
-#canvas-container{
-    position: absolute;
-    top: 0;
-    left: 0;
+/*
+#canvas-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+*/
+
+#particles-js {
+    position: absolute; 
     width: 100%;
-    z-index: -1;
+    height: 100%;
+    z-index: 0;  
+    background-color: #DEEBF7;    
 }
 
 .course-contents{
@@ -216,6 +229,7 @@ h2{
     gap: 20px;
     max-width: 1200px;
     margin-bottom: 50px;
+    
 }
 
 .course-content{
@@ -295,13 +309,13 @@ h2{
 }
 
 .course-content{
-    width: 150px;
+    width: 200px;
 }
 
 }
 
 #images{
-    padding: 100px 0;
+    padding: 0 0 50px;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -333,7 +347,14 @@ h2{
 
 @media (max-width: 498px){
 .slider{
-    max-width: 70%; 
+    width: 75%; 
+    margin: 0 auto;
+}
+.slick-prev{
+    left: -20px;
+}
+.slick-next{
+    right: -20px;
 }
 }
 
@@ -352,12 +373,12 @@ iframe{
 
 @media (max-width: 498px){
 iframe{
-    width: 240px;
+    width: 300px;
 }
 }
 
 footer{
-    padding: 20px 0;
+    margin-bottom: -80px;
 }
 
 footer p{
