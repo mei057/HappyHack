@@ -41,7 +41,8 @@ nav a{
     font-size: 20px;
     text-decoration: none;
     /*font-family: 'Futura-BooObl',sans-serif;*/
-    transition: color 0.3s ease;
+    transition: color 1.0s ease;
+    animation-delay: 1s;
 }
 
 nav a:hover{
@@ -176,11 +177,11 @@ h2{
     background-color: #f7c14d;
 }
 
-/*@media (max-width: 768px){
-.text {
-    margin-top: -40px;
+@media (max-width: 768px){
+h2 {
+    font-size: 45px;
 }
-}*/
+}
 
 @media (max-width: 498px){
 h2{
@@ -303,6 +304,22 @@ h2{
     background-color: #00add8;
 }
 
+@media (max-width: 768px){
+.course-content {
+    max-width: 160px;
+    height: 200px;
+    padding: 10px 0;
+}
+.course-content img{
+    width: 50px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+.course-content a{
+    width: 130px;
+}
+}
+
 @media (max-width: 498px){
 .course-contents{
     margin: 20px 20px;
@@ -316,13 +333,19 @@ h2{
 
 #images{
     padding: 0 0 50px;
+    margin: 0 auto;
+}
+
+.slider{
+    position: relative;
     max-width: 1000px;
+    width: 80%;
     margin: 0 auto;
 }
 
 .slider img{
-    width: 100%;
-    height: 180px;
+    width: 230px;
+    height: auto;
     object-fit: cover;
 }
 
@@ -334,32 +357,30 @@ h2{
 }
 
 .slick-prev{
+    position: absolute;
     left: -30px; 
     z-index: 3;
     color:#333333 
 }
 
 .slick-next{
+    position: absolute;
     right: -30px;
     z-index: 3;
     color:#333333;
 }
 
-@media (max-width: 498px){
-.slider{
-    width: 75%; 
-    margin: 0 auto;
-}
+/*@media (max-width: 498px){
 .slick-prev{
     left: -20px;
 }
 .slick-next{
     right: -20px;
 }
-}
+}*/
 
 #access{
-    padding: 50px;
+    padding: 50px 0;
     margin-top: -100px;
 }
 
@@ -367,15 +388,16 @@ h2{
 iframe{
     display: block;
     margin: 0 auto;
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     height: 400px;
 }
 
-@media (max-width: 498px){
+/*@media (max-width: 498px){
 iframe{
     width: 300px;
 }
-}
+}*/
 
 footer{
     margin-bottom: -80px;
